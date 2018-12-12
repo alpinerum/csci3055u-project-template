@@ -269,6 +269,26 @@ In 2015, Apple made Swift open source, allowing the open source community to sta
 
 Since Swift is used in a variety of devices such as TV, iPhones, Apple Watches, etc. there are a number of speccialized libraries that are exclusively used by certain types of devices. For example, for iOS, we would import the UIKit library for use on the iOS touchscreen.
 
+Here's an example of a program using UIKit
+```
+import UIKit
+
+class ViewController: UIViewController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
+
+  @IBAction func showMessage(sender: UIButton) {
+    let aController = UIAlertController(title: "Here's the app", message: "This is the app",
+  preferredStyle: UIAlertController.Style.alert)
+    aController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default,
+  handler: nil))
+    present(aController, animated: true, completion: nil)
+  }
+}
+```
+
 # Analysis of the Language
 
 Swift supports both functional programming and procedural programming. Procedural programming is only supported because of Swift's compatibility with C and Objective-C.
