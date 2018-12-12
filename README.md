@@ -1,5 +1,4 @@
-"# csci3055_finalproject" 
-
+ 
 Alvin Lum
 
 alvin.lum@uoit.net
